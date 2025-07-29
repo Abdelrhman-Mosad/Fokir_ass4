@@ -1,0 +1,416 @@
+
+
+/********************* About page *********************************/
+
+/*** image *********/
+
+.about_img{
+    float:left;
+    width: 30%;
+}
+
+.img_border{
+    border: 10px solid #555555;
+    position: relative;
+    width: 100%;
+}
+
+.img_wrp {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+
+.img_wrp img{
+    width: 100%;
+}
+
+
+.img_over_layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 85, 85, 0.6);
+    transition: top .5s 0s ease-in;
+    position: absolute;
+    top:100%;
+}
+
+.img_border:hover .img_over_layer
+{
+    top:0;
+}
+
+.img_over_layer ul{
+    position: absolute;
+    top:50%;
+    left:45%;
+    transform:translate(-50% ,-50%);
+    display: flex;
+}
+
+.img_over_layer li{
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.img_over_layer a{
+    text-decoration: none;
+    color:white;
+    transition-property: all;
+    transition-duration: .1s;
+}
+
+.img_over_layer a:hover{
+    color: #ff305b;
+}
+
+
+/*** content *********/
+.about_pg{
+    width:80%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.about_content{
+    float:right;
+    width: 60%;
+}
+
+.about_content h3{
+    margin-bottom: 30px;
+    padding-left: 5px;
+    border-left: #ff305b 5px solid;
+}
+
+.about_content p{
+    padding-bottom: 30px;
+    border-bottom: grey 2px dashed;
+}
+
+
+.info{
+    padding-top: 20px;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+.info li{
+    list-style: none;
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.info ul{
+    padding-left: 0px;
+}
+
+.info li span {
+    font-weight: 600;
+}
+
+.btn a{
+    text-decoration: none;
+    padding: 10px 24px;
+    color: white;
+    background-color: #ff305b ;
+    margin-right: 10px;
+    transition-property: background-color;
+    transition-duration: 0s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.btn a:hover{
+    background-color:orange;
+}
+
+
+/********************* Services page *********************************/
+
+.services{
+    text-align: center;
+    padding: 8% 0px;
+    background-color: #F1F1F1;
+}
+
+.services_wp{
+    width:90%;
+    margin: auto;
+}
+
+h2{
+    position: relative;
+    text-align: center;
+}
+
+h2::after{
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: 50%;
+
+    transform: translatex(-50%);
+
+    height: 50%;
+    width: 10%;
+    border-top: #F890A6 2px solid;
+    border-bottom: #F890A6 2px solid;
+
+}
+
+h2::before{
+    content: '';
+    position: absolute;
+    top: 175%;
+
+    /* to center */
+    left: 50%;
+    transform: translatex(-50%);
+
+    background-color: #F890A6;
+
+    height: 2px;
+    width: 20%;
+}
+
+.serv_items{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8% auto 0 auto;
+}
+
+.item{
+    width: 25%;
+    transition: all 1s;
+    padding: 20px 30px;
+}
+
+
+.item i{
+    transform: scale(2);
+    color: #ff305b;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+.item:hover{
+    background-color: white;
+    box-shadow:#555555 0 5px 15px;
+}
+
+.item:hover i{
+    transform: scale(2.5);
+}
+
+h3{
+    margin: 20px 0px
+    ;
+}
+
+/********************* Portfolio page *********************************/
+.Portfolio{
+    padding: 8% 0px;
+}
+
+.Portfolio_items{
+    width: 80%;
+    margin: 80px auto 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.p_item{
+    width: 30%;
+    margin: 15px 0px;
+    position: relative;
+}
+
+.p_item img{
+    width: 100%;
+    height: 100%;
+}
+
+.it_layer{
+    background-color: rgba(85, 85, 85, 0);
+    position: absolute;
+    inset: 0;
+    transition: all 0.5s;
+}
+
+.p_item:hover .it_layer{
+    background-color: rgba(85, 85, 85, 0.6);
+}
+
+
+/********************* Testmonial *********************************/
+
+
+
+.testmonial_item {
+    width:50%;
+    background-color: #F1F1F1;
+    margin: 5% auto;
+    padding: 50px;
+    position: relative;
+
+}
+
+.testmonial_item .test_item_img{
+    width: 10%;
+    float:left;
+}
+
+.testmonial_item .test_item_img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.testmonial_item .test_item_content{
+    float: right;
+    width: 80%;
+}
+
+.testmonial_item .test_item_content a{
+    text-decoration: none;
+    color:#555555;
+}
+
+
+/********************* our blog *********************************/
+.blog{
+    padding: 50px 0px;
+    background-color: #F1F1F1;
+}
+
+.blog_items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 80px auto;
+}
+
+.blog_item{
+    width: 30%;
+    background-color: white;
+}
+
+.blog_item .b_image_frame img {
+    width: 100%;
+}
+
+.blog_item .b_content h3 {
+    margin:10px 0px;
+}
+
+.blog_item .b_content p {
+    margin:10px 0px;
+}
+
+.blog_item .b_content{
+    padding: 20px 20px;
+}
+
+.blog_item .b_content a{
+    text-decoration: none;
+    color: #555555;
+}
+
+.blog_item .b_image_frame iframe {
+    width: 100%;
+    height: 200px;
+}
+
+/********************* contact us *********************************/
+.contact{
+    padding: 5% 0px;
+}
+
+
+.contact_h{
+    margin-bottom: 50px;
+    margin-top: ;
+}
+
+.contact_form{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact_form form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact_form #_name,#_emial{
+    width: 48%;
+    margin: 20px 0px;
+    padding: 8px 0px;
+    border-radius: 4px;
+}
+
+.contact_form #_sub, #_mesg{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 8px 0px;
+    border-radius: 4px;
+}
+
+.contact_form #_b_s{
+    background-color: #ff305b;
+    border: transparent;
+    border-radius: 3px;
+    padding: 5px 15px;
+    color: white;
+    transition: all 1s;
+}
+
+.contact_form #_b_s:hover{
+    background-color: orangered;
+}
+
+/********************* footer *********************************/
+
+footer{
+    background-color: #333333;
+    padding: 50px 0px;
+    text-align: center;
+    color: white;
+}
+
+footer p span {
+    color: #ff305b;
+}
+
+.f_items ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 30px 0px;
+}
+
+.f_items a{
+    margin: 20px;
+    text-decoration: none;
+    color:white;
+    transition: all 1s;
+}
+
+.f_items a i {
+    transform: scale(1.6);
+}
+
+.f_items a:hover{
+    color: #ff305b;
+}
+

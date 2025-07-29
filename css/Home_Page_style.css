@@ -1,0 +1,89 @@
+
+.home_page{
+    position: relative;
+}
+
+.home_page{
+    background-image: url(../images/hero\ img.jpg);
+    background-size: 100% 100%;
+    height:100vh;
+    width: 100%;
+}
+
+.home_page_layer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+.nevbar_wp{
+    width:100%;
+    position: fixed;
+    z-index: 20;
+    background-color: grey;
+}
+
+
+.nevbar{
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    position: relative;
+}
+
+.nevbar .left_icon a{
+    text-decoration: none;
+    color: white;
+    transition-property: all .5s;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.nevbar .nevbar_menus a {
+    text-decoration: none;
+    color: white;
+    transition-property: all .5s;
+}
+
+.nevbar a:hover{
+    color:#ff305b;
+}
+
+.left_icon{
+    float:left;
+}
+
+.nev_drop_menue{
+    float: right;
+    display:none;
+}
+
+.nev_drop_menue .btn_bar{
+    background-color: white;
+    width: 20px;
+    height: 2px;
+    margin: 3px;
+}
+
+.nevbar_menus{
+    float: right;
+    padding-top: 10px;
+}
+.nevbar_menus li {
+    float: left;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.home_page_content_wp{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
